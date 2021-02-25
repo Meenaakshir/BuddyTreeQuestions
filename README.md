@@ -91,18 +91,13 @@
     Here is an example:
 
     ```const array = ['a', 'b'];
-    const elements = [0, 1, 2];
+       const elements = [0, 1, 2];
+
+
+       array.push.apply(array,elements);
+       console.info(array);
+
+       The output will be :
+       ["a", "b", 0, 1, 2]
+
     ```
-
-    array.push.apply(array,elements);
-    console.info(array);
-
-    The output will be :
-    ["a", "b", 0, 1, 2]
-
-````
-
-```
-
-```
-````
